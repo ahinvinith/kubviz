@@ -1,9 +1,25 @@
 apiVersion: v1
 entries:
+  agent:
+  - apiVersion: v2
+    appVersion: v1.1.7
+    created: "2024-05-03T07:31:55.525522318Z"
+    dependencies:
+    - condition: kuberhealthy.enabled
+      name: kuberhealthy
+      repository: https://kube-tarian.github.io/helmrepo-supporting-tools/
+      version: 1.x.x
+    description: A Helm chart for kubeviz agent
+    digest: 1b96a7479f4c06cc107cd9690c873afaed21a56bdd158af2f1540ca0d23bc3f1
+    name: agent
+    type: application
+    urls:
+    - https://github.com/ahinvinith/kubviz/releases/download/agent-1.1.21/agent-1.1.21.tgz
+    version: 1.1.21
   client:
   - apiVersion: v2
-    appVersion: v1.1.6
-    created: "2024-04-16T06:42:25.738710334Z"
+    appVersion: v1.1.7
+    created: "2024-05-03T07:31:55.675543649Z"
     dependencies:
     - condition: nats.enabled
       name: nats
@@ -18,10 +34,10 @@ entries:
       repository: https://kube-tarian.github.io/helmrepo-supporting-tools/
       version: 1.0.5
     description: A Helm chart for kubeviz client
-    digest: bfc7c593feceba84ab8969e8b865d338aa17d5302b8718123e8db515b5e1b821
+    digest: 7e8f3ebd438508757e6651163254ee264fac856ffa42d0572aac47750eefb7bd
     name: client
     type: application
     urls:
-    - https://github.com/ahinvinith/kubviz/releases/download/client-1.1.25/client-1.1.25.tgz
-    version: 1.1.25
-generated: "2024-04-16T06:42:25.557650634Z"
+    - https://github.com/ahinvinith/kubviz/releases/download/client-1.1.26/client-1.1.26.tgz
+    version: 1.1.26
+generated: "2024-05-03T07:31:55.334691298Z"
